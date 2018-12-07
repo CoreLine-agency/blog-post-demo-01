@@ -1,2 +1,2 @@
 require('nnode');
-require('./server/start-server');
+require('./start-server');
