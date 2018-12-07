@@ -34,7 +34,7 @@ export class User {
     return users.filter(user => user.id === id)[0];
   }
 
-  @mutation`(username: String!, firstName: String!, lastName: String!, password: String!): User!`
+  @mutation`(username: String!, firstName: String!, lastName: String!, password: String!, email: String!): User!`
   createUser(inputArgs) {
     const id = (users.length + 1).toString();
     const newUser = { id, ...inputArgs };
